@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    tools:context=".UpdateSubjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="Update"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"/>
+
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Subject Name"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/update_subject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:hint="Subject Name"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Present"
+            android:textSize="15sp"/>
+
+
+        <EditText
+            android:id="@+id/update_present"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:layout_weight="0.5"
+            android:hint="Present"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Absent"
+            android:textSize="15sp"/>
+
+
+        <EditText
+            android:id="@+id/update_absent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:layout_weight="0.5"
+            android:hint="Absent"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:background="@drawable/save_button"
+            android:textSize="16dp"
+            android:textColor="@android:color/background_light"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
